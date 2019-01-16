@@ -7,3 +7,19 @@ Time Taken By Insertion Sort For 300k Is:
 17.647467
 Time Taken By Insertion Sort For 500k Is:
 49.431047
+Time Taken By For 100k Bubble Sort Is:
+27.285054
+Time Taken By For 200k Bubble Sort Is:
+46.172644
+Time Taken By For 300k Bubble Sort Is:
+103.561129
+Time Taken By For 500k Bubble Sort Is:
+289.490124
+Time Taken By Selection Sort For 100k Is:
+9.529554
+Time Taken By Selection Sort For 200k Is:
+38.037693
+Time Taken By Selection Sort For 300k Is:
+85.655649
+Time Taken By Selection Sort For 500k Is:
+240.011122
