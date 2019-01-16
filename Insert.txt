@@ -1,0 +1,9 @@
+
+Time Taken By Insertion Sort For 100k Is:
+5.354780
+Time Taken By Insertion Sort For 200k Is:
+8.152625
+Time Taken By Insertion Sort For 300k Is:
+17.647467
+Time Taken By Insertion Sort For 500k Is:
+49.431047
