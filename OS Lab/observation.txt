@@ -1,0 +1,82 @@
+Q1> Fork1:
+    Orignal Output:
+
+        hello world (pid:4599)
+        hello, I am parent of 4600 (pid:4599)
+        hew, I am child (pid:4600)
+
+    On copying the code once agin we get:
+
+        hello world (pid:4519)
+        hello, I am parent of 4520 (pid:4519)
+        hew, I am child (pid:4520)
+        hey, I am parent of 4520 (pid:4519)
+        hi, I am child (pid:4521)
+        hey, I am parent of 0 (pid:4520)
+        hi, I am child (pid:4522)
+
+    we observe that:
+
+
+Q2. Fork2:
+
+     Orignal Output:
+        hello world (pid:4630)
+        hello, I am child (pid:4631)
+        hello, I am parent of 4631 (rc_wait:4631) (pid:4630)
+
+
+    On copying the code once agin we get:
+
+        hello world (pid:4614)
+        hello, I am child (pid:4615)
+        hello, I am child (pid:4616)
+        hello, I am parent of 0 (rc_wait:4616) (pid:4615)
+        hello, I am parent of 4615 (rc_wait:4615) (pid:4614)
+        hello, I am child (pid:4617)
+        hello, I am parent of 4615 (rc_wait:4617) (pid:4614)
+    we observe that:
+
+
+Q3. Fork3:
+
+    Orignal Output:
+        hello world (pid:4767)
+            hello, I am child (pid:4768)
+            25 123 809 p3.c
+            hello, I am parent of 4768 (rc_wait:4768) (pid:4767)
+
+
+
+Q4. Fork4:
+    Orignal Output Found in file p4.output:
+         25 135 793 p4.c
+    because i pasted the same file in p4.c hence the word count of fork4 is printed
+
+
+Q5. As I have written the in such a way that parent and child both changes the value of variable x
+    we get:
+
+    hello world (pid:5887)
+    hello, I am parent of 5888 (pid:5887)
+    101
+    hew, I am child (pid:5888)
+    99
+
+
+    We Observed that :
+
+
+
+Q6. As I have written the in such a way that parent and child both changes the value of variable x
+    we get:
+
+
+    hello world (pid:5896)
+    hello, I am child (pid:5897)
+    99
+    hello, I am parent of 5897 (rc_wait:5897) (pid:5896)
+    101
+
+    Wwe Observed That :
+    
