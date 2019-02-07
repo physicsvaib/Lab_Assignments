@@ -16,6 +16,7 @@ Q1> Fork1:
         hi, I am child (pid:4522)
 
     we observe that:
+        The child process is always executed after the parent process.
 
 
 Q2. Fork2:
@@ -36,7 +37,7 @@ Q2. Fork2:
         hello, I am child (pid:4617)
         hello, I am parent of 4615 (rc_wait:4617) (pid:4614)
     we observe that:
-
+        The child process always gets executed first no matter how many background processes are running.
 
 Q3. Fork3:
 
@@ -46,12 +47,16 @@ Q3. Fork3:
             25 123 809 p3.c
             hello, I am parent of 4768 (rc_wait:4768) (pid:4767)
 
+    We observe that:
+        we got the file output as we ran the same file in the target file and got the word count details from it.
+
 
 
 Q4. Fork4:
     Orignal Output Found in file p4.output:
          25 135 793 p4.c
-    because i pasted the same file in p4.c hence the word count of fork4 is printed
+    We observe that:
+        because we pasted the same file in p4.c hence the word count of fork4 is printed
 
 
 Q5. As I have written the in such a way that parent and child both changes the value of variable x
@@ -65,6 +70,7 @@ Q5. As I have written the in such a way that parent and child both changes the v
 
 
     We Observed that :
+        we can see the code as wriiten and the observed output says the parent process executed first.
 
 
 
@@ -78,5 +84,5 @@ Q6. As I have written the in such a way that parent and child both changes the v
     hello, I am parent of 5897 (rc_wait:5897) (pid:5896)
     101
 
-    Wwe Observed That :
-    
+    We Observed That :
+        the child process executed first in this code and giving the observed values.
